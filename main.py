@@ -59,7 +59,7 @@ def clicked():
     lbl.configure(text=str(random.choice(drops)))
 
 
-btn = Button(window, text="Drop Again", command=clicked)
+btn = Button(window, text="Drop", command=clicked)
 btn.place(x=230, y=175, anchor="center")
 map_select.bind("<<ComboboxSelected>>", update_map_select)
 
