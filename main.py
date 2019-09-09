@@ -15,7 +15,7 @@ lbl.config(font=("Verdana", 20))
 lbl.place(x=230, y=100, anchor="center")
 
 dropdown = Combobox(window)
-dropdown['values'] = ("Erangel", "Sanhok", "Miramar")
+dropdown['values'] = ("Erangel", "Sanhok", "Miramar", "Vikendi")
 dropdown.current(0)
 dropdown.place(x=230, y=50, anchor="center")
 
@@ -24,7 +24,7 @@ game_map = dropdown.get()
 if game_map == "Erangel":
     drops = ["Kameshki", "Zharki", "Stalber", "Northwest Bunker", "West Bunker", "East Bunker", "Shooting Range",
              "Yasnaya Compound", "Plane Crash",
-             "Georgopol", "Yasnaya Polyana", "Rozhok", "Hospital", "Georgopol Hills", "Ruins", "Water Town" "Scho",
+             "Georgopol", "Yasnaya Polyana", "Rozhok", "Hospital", "Georgopol Hills", "Ruins", "Water Town", "School",
              "Apartments", "Mansion",
              "Lipovka", "Hay Farm", "Gatka", "Pochinki", "Pochinki Hills", "Shelter", "Prison", "Gatka Radio",
              "Gatka Trenches", "Woodcutter Camp",
@@ -44,6 +44,10 @@ elif game_map == "Sanhok":
              "Lakawi", "Ruins", "Pai Nan",
              "Quarry", "Kampong", "Ruins", "Pai Nan", "Tambang", "Cave", "Na Kham", "Sahmee", "Camp Charlie", "Docks",
              "Ban Tai"]
+elif game_map == "Vikendi":
+    drops = ["Dobro Mesto", "Goroka", "Podvosto", "Volnova", "Abbey", "Cantra", "Krichas", "Milnar", "Movatra", "Pilnec",
+            "Peshkova", "Tovar", "Trevno", "Vihar", "Zabava", "Dino Park", "Castle", "Cement Factory", "Cosomodrome",
+            "Hot Springs", "Villa", "Lumber Yard", "Mount Kreznic", "Port", "Sawmill", "Winery"]
 
 
 def randomize(game_map):
